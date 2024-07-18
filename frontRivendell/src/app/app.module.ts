@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './hello-world/hello-world.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { EventsComponent } from './pages/events/events.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    LoginComponent,
+    EventsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
