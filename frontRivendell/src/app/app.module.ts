@@ -9,7 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { EventsComponent } from './pages/events/events.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { EventCardComponent } from './event-card/event-card.component';
+import { EventCardComponent } from './components/event-card/event-card.component';
 
 @NgModule({
   declarations: [
