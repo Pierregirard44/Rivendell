@@ -1,0 +1,80 @@
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-image {
+    width: 100%; // Makes the banner image full width
+    margin-bottom: 25px;
+  }
+
+  .mid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .creators-image {
+    flex: 1 1 50%; // Adjust the flex-basis as needed
+    max-width: 50%;
+    margin-right: 20px;
+  
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%; // Ensure the image scales down on smaller screens
+    }
+  }
+  
+  .reasonForBeing-container { // Corrected class name
+    flex: 2 1 300px; // Added flex-basis with a minimum width
+    width: 90%; // Ensures the container takes up most of the width on smaller screens
+  
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  
+  /* Styling for the howItWorks-container */
+  .howItWorks-container {
+    width: 90%; // Ensures the container takes up most of the width on smaller screens
+    margin-top: 20px; // Adjust as needed
+  
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  
+  /* Styling for the secondary links */
+  .secondaryLinks-container {
+    display: flex;
+    justify-content: space-around; // Adjust for equal spacing around items
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+  
+    a {
+      margin: 10px; // Adjust if needed, but might be less relevant with space-around
+      padding: 10px 15px; // Adds padding inside the links, making them look more like buttons
+      background-color: #007bff; // Example button color, adjust as needed
+      color: white; // Text color, adjust as needed
+      text-decoration: none; // Removes underline from links
+      border-radius: 5px; // Gives the buttons rounded corners
+      border: 1px solid transparent; // Adds a border that can be color-adjusted if needed
+      transition: background-color 0.2s, color 0.2s; // Smooth transition for hover effects
+
+      &:hover {
+        background-color: #0056b3; // Darker shade on hover, adjust as needed
+        color: #fff; // Adjust text color on hover if needed
+      }
+    }
+  }
