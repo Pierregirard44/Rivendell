@@ -11,6 +11,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProfileComponent,
     FooterComponent,
     EventCardComponent,
+    CreateProfileComponent,
   ],
   imports: [
     BrowserModule,
