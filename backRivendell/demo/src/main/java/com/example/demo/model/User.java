@@ -1,10 +1,13 @@
 package com.example.demo.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
+
 import java.time.LocalDateTime;
 
 @Entity
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +22,12 @@ public class User {
     private String password;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAt;
+
+    // No-argument constructor required by JPA
+    public User() {
+        this.createdAt = LocalDateTime.now();
+    }
 
     // Getters and setters
     public Long getId() {
