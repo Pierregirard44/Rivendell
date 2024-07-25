@@ -1,20 +1,27 @@
 .card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-  }
-  
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+
   h3 {
     margin-top: 0;
     font-size: 20px;
     color: #333;
   }
-  
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+  }
+
   p {
     margin: 10px 0;
     font-size: 14px;
     color: #555;
   }
-  
+}
