@@ -12,5 +12,9 @@
       </div>
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
+    <button routerLink="/create-profile" class="btn btn-secondary">Don't have a profile? Create one</button>
+    <div *ngIf="profileCreated" class="alert alert-success">
+      Profile has been created successfully!
+    </div>
   </div>
 </div>
